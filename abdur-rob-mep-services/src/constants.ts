@@ -6,17 +6,17 @@
 import { Service, CallbackRequest } from './types';
 
 export const SITE_IMAGES = {
-  hero: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCwqmFTeHfXsoEzrbi3Wer5LdQjJrCcu0SHFxBY_HOGF43H0-VbLUkROYu1Llr7IsCILtkI-X5sPD61tX4aH6B5MIRcQZRFZxIbvzbCCQ_6J08JgKZ3fnmmrf9JWWVeWTLCs5sW-eXkOtXJgnCf5bqi1fS3GlToXoA65WGad6aE73TfTZQglxqogr4fC2xqrxUpgAxxQHimU1KyfTZ3ro7cICrtxz52U6Rg1lEHCvXi11WbSu3K-82KRE-TaZlr7q33FDkHjOOscw',
-  about: 'https://lh3.googleusercontent.com/aida/ADBb0uh0kic1ecEl_7VSxBGQat1UczuWdvIfuM8HCCUjQs9vzXdtVko1slfrFv-ZyrqfUMV4Bli8cBaiZi0DWDDSEkCkFyOhiWjzvySxnSoTcDCGGBUJqgwUaHW_ppewtTTnI0GEFCmMdMxLAoNB1AjsFWuGqEDIQhmefWwEGecAfW-CPXqYTzI1qjPC8EWEXvEtWmhnjMx-AqpVKJWVh7oRUxqaXSi8CyGQrFJ9K8rTVQpyrXcI-s3O-SdVHg',
-  electrical: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDm4G3CBFo6NbR7PlcyTyHoU5QMQNMbbCYwHzmYqnOJbRrpwBn58xBnDTv8VaVj7rN5Ly3cPrLV7TFMUxK_f-UI-Em3r2p5vjBvuoP6Ooec-r4busqnv3e8J9z8CJSo0aI4VvS9u9kE5JotUPsfJWwiQ_p_C19Jx7PMaW7xiWXpvg3PYt82H45Nx-08WpBQFUNzRJ-Ruig2tz-0m8XTPQsLygwVLPnvg3sWQg8RveVku7fe-qYIh6QZYG1zFlsyh6nB7Z_8QYwGlQ',
-  plumbing: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDgnVEg4RsXeBUEUZe8w8Pjdh4pUG5JHWH98WiyC8Xwak26fARZ12oPE_A-MYpNrK6BHIOZY1sd9Q3d99gZayFtPCNXXu6d_54zdMNuPSB1L9Fsin3xQtHTpdn-xcm_eDMjAKmlls43iD-akP2HIY3YxAD6t-JvuYNktnWEijD8m-vhtODYTOc9XSTwOu2ypX3wSXG1aATGrYKej0lZUmmYN26pSyzUhCCAwmkr5r-ZPGL0FRF_NDcQCDODj7j7pl8__t8e-HLp4g',
-  maintenance: 'https://lh3.googleusercontent.com/aida-public/AB6AXuATWWZzYftkwjDK1Gg7a4LTX9A3H15bL_UTbyTxFwc640XlpcYUcyOwMRSr1JFdUh624qQnCEYgGpLPRA6Pr_22dX3TE4yFRp5jYyVAbSOwcD7FXh5krfyj_haaqE816k1TO7XuS3bnCb3rcHM4HBT6XrI048RjXv5X_9ftFnl4J3Aeb3OLKrsI5jIr6AbIObH8Roy2We7lJpbIpTCszuEzdjpn3a7JbWM_Tt7DpOyxEpf6Plgi6f5WXjS3BdScl2gS-7OYV3ORug',
+  hero: 'https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?auto=format&fit=crop&q=80&w=1000',
+  about: 'https://images.unsplash.com/photo-1581092918030-2b943e6988cc?auto=format&fit=crop&q=80&w=1000',
+  electrical: 'https://images.unsplash.com/photo-1581092918030-2b943e6988cc?auto=format&fit=crop&q=80&w=800',
+  plumbing: 'https://images.unsplash.com/photo-1585771724684-38269d6639fd?auto=format&fit=crop&q=80&w=800',
+  maintenance: 'https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?auto=format&fit=crop&q=80&w=800',
   smartHome: 'https://images.unsplash.com/photo-1558002038-1055907df827?auto=format&fit=crop&q=80&w=800',
   security: 'https://images.unsplash.com/photo-1557597774-9d273605dfa9?auto=format&fit=crop&q=80&w=800',
   emergency: 'https://images.unsplash.com/photo-1581094288338-2314dddb7ecc?auto=format&fit=crop&q=80&w=800',
-  portfolio1: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDm4G3CBFo6NbR7PlcyTyHoU5QMQNMbbCYwHzmYqnOJbRrpwBn58xBnDTv8VaVj7rN5Ly3cPrLV7TFMUxK_f-UI-Em3r2p5vjBvuoP6Ooec-r4busqnv3e8J9z8CJSo0aI4VvS9u9kE5JotUPsfJWwiQ_p_C19Jx7PMaW7xiWXpvg3PYt82H45Nx-08WpBQFUNzRJ-Ruig2tz-0m8XTPQsLygwVLPnvg3sWQg8RveVku7fe-qYIh6QZYG1zFlsyh6nB7Z_8QYwGlQ',
-  portfolio2: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDgnVEg4RsXeBUEUZe8w8Pjdh4pUG5JHWH98WiyC8Xwak26fARZ12oPE_A-MYpNrK6BHIOZY1sd9Q3d99gZayFtPCNXXu6d_54zdMNuPSB1L9Fsin3xQtHTpdn-xcm_eDMjAKmlls43iD-akP2HIY3YxAD6t-JvuYNktnWEijD8m-vhtODYTOc9XSTwOu2ypX3wSXG1aATGrYKej0lZUmmYN26pSyzUhCCAwmkr5r-ZPGL0FRF_NDcQCDODj7j7pl8__t8e-HLp4g',
-  loginBg: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCwqmFTeHfXsoEzrbi3Wer5LdQjJrCcu0SHFxBY_HOGF43H0-VbLUkROYu1Llr7IsCILtkI-X5sPD61tX4aH6B5MIRcQZRFZxIbvzbCCQ_6J08JgKZ3fnmmrf9JWWVeWTLCs5sW-eXkOtXJgnCf5bqi1fS3GlToXoA65WGad6aE73TfTZQglxqogr4fC2xqrxUpgAxxQHimU1KyfTZ3ro7cICrtxz52U6Rg1lEHCvXi11WbSu3K-82KRE-TaZlr7q33FDkHjOOscw',
+  portfolio1: 'https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?auto=format&fit=crop&q=80&w=1000',
+  portfolio2: 'https://images.unsplash.com/photo-1585771724684-38269d6639fd?auto=format&fit=crop&q=80&w=1000',
+  loginBg: 'https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?auto=format&fit=crop&q=80&w=1000'
 };
 
 export const SITE_CONFIG = {
@@ -96,7 +96,7 @@ export const CALLBACK_REQUESTS: CallbackRequest[] = [
     location: 'Jizan Industrial City, Block C',
     timestamp: '10 mins ago',
     status: 'new',
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDm4G3CBFo6NbR7PlcyTyHoU5QMQNMbbCYwHzmYqnOJbRrpwBn58xBnDTv8VaVj7rN5Ly3cPrLV7TFMUxK_f-UI-Em3r2p5vjBvuoP6Ooec-r4busqnv3e8J9z8CJSo0aI4VvS9u9kE5JotUPsfJWwiQ_p_C19Jx7PMaW7xiWXpvg3PYt82H45Nx-08WpBQFUNzRJ-Ruig2tz-0m8XTPQsLygwVLPnvg3sWQg8RveVku7fe-qYIh6QZYG1zFlsyh6nB7Z_8QYwGlQ'
+    image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=400'
   },
   {
     id: 'CB-8841',
@@ -106,7 +106,7 @@ export const CALLBACK_REQUESTS: CallbackRequest[] = [
     location: 'Al Rawdah District, Villa 42',
     timestamp: '2 hours ago',
     status: 'in-progress',
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDgnVEg4RsXeBUEUZe8w8Pjdh4pUG5JHWH98WiyC8Xwak26fARZ12oPE_A-MYpNrK6BHIOZY1sd9Q3d99gZayFtPCNXXu6d_54zdMNuPSB1L9Fsin3xQtHTpdn-xcm_eDMjAKmlls43iD-akP2HIY3YxAD6t-JvuYNktnWEijD8m-vhtODYTOc9XSTwOu2ypX3wSXG1aATGrYKej0lZUmmYN26pSyzUhCCAwmkr5r-ZPGL0FRF_NDcQCDODj7j7pl8__t8e-HLp4g'
+    image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=400'
   },
   {
     id: 'CB-8840',
@@ -116,6 +116,6 @@ export const CALLBACK_REQUESTS: CallbackRequest[] = [
     location: 'Corniche Road, Tower B',
     timestamp: 'Yesterday, 14:30',
     status: 'completed',
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuATWWZzYftkwjDK1Gg7a4LTX9A3H15bL_UTbyTxFwc640XlpcYUcyOwMRSr1JFdUh624qQnCEYgGpLPRA6Pr_22dX3TE4yFRp5jYyVAbSOwcD7FXh5krfyj_haaqE816k1TO7XuS3bnCb3rcHM4HBT6XrI048RjXv5X_9ftFnl4J3Aeb3OLKrsI5jIr6AbIObH8Roy2We7lJpbIpTCszuEzdjpn3a7JbWM_Tt7DpOyxEpf6Plgi6f5WXjS3BdScl2gS-7OYV3ORug'
+    image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=400'
   }
 ];
